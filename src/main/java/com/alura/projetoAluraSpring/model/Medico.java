@@ -1,5 +1,6 @@
 package com.alura.projetoAluraSpring.model;
 
+import com.alura.projetoAluraSpring.dto.DadosAtualizacaoMedico;
 import com.alura.projetoAluraSpring.dto.MedicoCadastro;
 import com.alura.projetoAluraSpring.enums.Especialidade;
 import jakarta.persistence.*;
@@ -31,14 +32,25 @@ public class Medico {
     @Embedded
     private Endereco endereco;
 
-    public Medico(MedicoCadastro cadastroMedico){
+    public Medico(MedicoCadastro cadastroMedico) {
         this.nome = cadastroMedico.nome();
         this.email = cadastroMedico.email();
         this.telefone = cadastroMedico.telefone();
         this.crm = cadastroMedico.crm();
         this.endereco = new Endereco(cadastroMedico.endereco());
         this.especialidade = cadastroMedico.especialidade();
+    }
 
+    public void atualizarInformacoes(DadosAtualizacaoMedico medico) {
+        if (medico.nome() != null) {
+            this.nome = medico.nome();
+        }
+        if (medico.telefone() != null) {
+            this.telefone = medico.telefone();
+        }
+        if (medico.endereco() != null) {
+            this.endereco.atualizarInformacoes(medico.endereco());
+        }
 
     }
 }
