@@ -1,7 +1,7 @@
-package com.alura.projetoAluraSpring.dto;
+package com.alura.projetoAluraSpring.medico;
 
 import com.alura.projetoAluraSpring.enums.Especialidade;
-import com.alura.projetoAluraSpring.model.Medico;
+import com.alura.projetoAluraSpring.medico.Medico;
 
 public record DadosListaMedico(Long id, String nome, String email, String crm, Especialidade especialidade) {
 

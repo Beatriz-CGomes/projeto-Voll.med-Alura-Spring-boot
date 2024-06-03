@@ -1,7 +1,6 @@
-package com.alura.projetoAluraSpring.model;
+package com.alura.projetoAluraSpring.medico;
 
-import com.alura.projetoAluraSpring.dto.DadosAtualizacaoMedico;
-import com.alura.projetoAluraSpring.dto.MedicoCadastro;
+import com.alura.projetoAluraSpring.endereco.Endereco;
 import com.alura.projetoAluraSpring.enums.Especialidade;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -32,7 +31,10 @@ public class Medico {
     @Embedded
     private Endereco endereco;
 
+    private Boolean ativo;
+
     public Medico(MedicoCadastro cadastroMedico) {
+        this.ativo = true;
         this.nome = cadastroMedico.nome();
         this.email = cadastroMedico.email();
         this.telefone = cadastroMedico.telefone();
@@ -52,5 +54,9 @@ public class Medico {
             this.endereco.atualizarInformacoes(medico.endereco());
         }
 
+    }
+
+    public void excluir() {
+        this.ativo = false;
     }
 }

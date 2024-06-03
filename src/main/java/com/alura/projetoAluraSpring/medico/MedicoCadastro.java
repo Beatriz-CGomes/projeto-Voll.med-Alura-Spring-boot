@@ -1,5 +1,6 @@
-package com.alura.projetoAluraSpring.dto;
+package com.alura.projetoAluraSpring.medico;
 
+import com.alura.projetoAluraSpring.endereco.DadosEndereco;
 import com.alura.projetoAluraSpring.enums.Especialidade;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;

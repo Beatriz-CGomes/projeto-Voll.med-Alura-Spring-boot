@@ -1,4 +1,4 @@
-package com.alura.projetoAluraSpring.dto;
+package com.alura.projetoAluraSpring.endereco;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;

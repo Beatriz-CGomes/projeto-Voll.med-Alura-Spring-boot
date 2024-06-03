@@ -1,6 +1,6 @@
-package com.alura.projetoAluraSpring.model;
+package com.alura.projetoAluraSpring.endereco;
 
-import com.alura.projetoAluraSpring.dto.DadosEndereco;
+import com.alura.projetoAluraSpring.endereco.DadosEndereco;
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
