@@ -1,7 +1,7 @@
-package com.alura.projetoAluraSpring.medico;
+package com.alura.projetoAluraSpring.dominio.medico;
 
-import com.alura.projetoAluraSpring.endereco.Endereco;
-import com.alura.projetoAluraSpring.enums.Especialidade;
+import com.alura.projetoAluraSpring.dominio.endereco.Endereco;
+import com.alura.projetoAluraSpring.dominio.enums.Especialidade;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

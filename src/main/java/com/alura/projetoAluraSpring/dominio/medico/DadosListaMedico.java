@@ -1,7 +1,6 @@
-package com.alura.projetoAluraSpring.medico;
+package com.alura.projetoAluraSpring.dominio.medico;
 
-import com.alura.projetoAluraSpring.enums.Especialidade;
-import com.alura.projetoAluraSpring.medico.Medico;
+import com.alura.projetoAluraSpring.dominio.enums.Especialidade;
 
 public record DadosListaMedico(Long id, String nome, String email, String crm, Especialidade especialidade) {
 

@@ -1,6 +1,6 @@
 package com.alura.projetoAluraSpring.controller;
 
-import com.alura.projetoAluraSpring.medico.*;
+import com.alura.projetoAluraSpring.dominio.medico.*;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

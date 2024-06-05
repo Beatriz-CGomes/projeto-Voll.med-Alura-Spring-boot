@@ -1,4 +1,4 @@
-package com.alura.projetoAluraSpring.paciente;
+package com.alura.projetoAluraSpring.dominio.paciente;
 
 public record DadosListagemPaciente(Long id, String nome, String email, String cpf) {
 

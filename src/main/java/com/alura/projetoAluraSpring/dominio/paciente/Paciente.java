@@ -1,6 +1,6 @@
-package com.alura.projetoAluraSpring.paciente;
+package com.alura.projetoAluraSpring.dominio.paciente;
 
-import com.alura.projetoAluraSpring.endereco.Endereco;
+import com.alura.projetoAluraSpring.dominio.endereco.Endereco;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

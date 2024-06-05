@@ -1,4 +1,4 @@
-package com.alura.projetoAluraSpring.enums;
+package com.alura.projetoAluraSpring.dominio.enums;
 
 public enum Especialidade {
 

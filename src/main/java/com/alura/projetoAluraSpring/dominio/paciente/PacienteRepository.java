@@ -1,4 +1,4 @@
-package com.alura.projetoAluraSpring.paciente;
+package com.alura.projetoAluraSpring.dominio.paciente;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

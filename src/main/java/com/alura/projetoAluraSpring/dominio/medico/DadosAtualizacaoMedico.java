@@ -1,6 +1,6 @@
-package com.alura.projetoAluraSpring.medico;
+package com.alura.projetoAluraSpring.dominio.medico;
 
-import com.alura.projetoAluraSpring.endereco.DadosEndereco;
+import com.alura.projetoAluraSpring.dominio.endereco.DadosEndereco;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 

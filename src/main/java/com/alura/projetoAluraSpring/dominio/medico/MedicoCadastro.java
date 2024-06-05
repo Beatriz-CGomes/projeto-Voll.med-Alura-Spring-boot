@@ -1,7 +1,7 @@
-package com.alura.projetoAluraSpring.medico;
+package com.alura.projetoAluraSpring.dominio.medico;
 
-import com.alura.projetoAluraSpring.endereco.DadosEndereco;
-import com.alura.projetoAluraSpring.enums.Especialidade;
+import com.alura.projetoAluraSpring.dominio.endereco.DadosEndereco;
+import com.alura.projetoAluraSpring.dominio.enums.Especialidade;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
 
@@ -14,7 +14,6 @@ public record MedicoCadastro(
         @NotBlank
         @Email
         String email,
-
 
         @NotBlank
         String telefone,

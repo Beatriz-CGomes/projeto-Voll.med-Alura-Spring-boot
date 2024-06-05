@@ -1,6 +1,6 @@
-package com.alura.projetoAluraSpring.paciente;
+package com.alura.projetoAluraSpring.dominio.paciente;
 
-import com.alura.projetoAluraSpring.endereco.Endereco;
+import com.alura.projetoAluraSpring.dominio.endereco.Endereco;
 
 public record DadosDetalhamentoPaciente(Long id, String nome, String email, String telefone, String cpf,
                                         Endereco endereco) {
